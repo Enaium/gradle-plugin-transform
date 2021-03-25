@@ -41,4 +41,9 @@ pluginBundle {
     vcsUrl = 'https://github.com/Enaium/transform'
     description = 'Transform class after compile'
     tags = ['transform', 'class']
+
+    mavenCoordinates {
+        groupId = project.group.toString()
+        artifactId = project.name
+    }
 }
