@@ -19,7 +19,7 @@ dependencies {
 uploadArchives {
     repositories.mavenDeployer {
         def MAVEN_URL = System.getenv('MAVEN_URL')
-        if(MAVEN_URL != null) {
+        if (MAVEN_URL != null) {
             repository(url: "file://${new File(MAVEN_URL)}")
         }
     }
@@ -27,10 +27,11 @@ uploadArchives {
 
 gradlePlugin {
     plugins {
-        register {
+        create("transform") {
             id = 'cn.enaium.transform'
-            displayName = 'Gradle transform class plugin'
             implementationClass = 'cn.enaium.transform.TransformPlugin'
+            displayName = 'Gradle transform class plugin'
+            description = 'Transform class after compile'
         }
     }
 }
