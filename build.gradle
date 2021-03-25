@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id "com.gradle.plugin-publish" version "0.13.0"
+    id "java-gradle-plugin"
+}
+
+group 'cn.enaium'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation gradleApi()
+}
+
+gradlePlugin {
+    plugins {
+        register {
+            id = 'cn.enaium.transform'
+            displayName = 'Gradle transform class plugin'
+            implementationClass = 'cn.enaium.transform.TransformPlugin'
+        }
+    }
+}
+
+pluginBundle {
+    website = 'https://github.com/Enaium/transform'
+    vcsUrl = 'https://github.com/Enaium/transform'
+    description = 'Transform class after compile'
+    tags = ['transform', 'class']
+}
