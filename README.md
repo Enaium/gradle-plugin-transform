@@ -7,7 +7,7 @@
 
 ```groovy
 plugins {
-    id "cn.enaium.transform" version "1.1"
+    id "cn.enaium.transform" version "1.2"
 }
 
 repositories {
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly('cn.enaium:transform:1.1')
+    compileOnly('cn.enaium:transform:1.2')
 }
 ```
 
@@ -29,7 +29,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "cn.enaium:transform:1.1"
+    classpath "cn.enaium:transform:1.2"
   }
 }
 
