@@ -11,7 +11,7 @@ plugins {
 }
 
 dependencies {
-    compileClasspath('cn.enaium:transform:1.1')
+    compileOnly('cn.enaium:transform:1.1')
 }
 ```
 
