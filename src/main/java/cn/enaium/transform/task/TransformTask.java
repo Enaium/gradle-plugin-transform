@@ -17,7 +17,9 @@ public class TransformTask extends DefaultTask {
             ITransform transform = this.getProject().getExtensions().getByType(TransformExtension.class).transform;
             File classes = new File(this.getProject().getBuildDir(), "classes");
             for (File file : new FileUtil().getFiles(classes)) {
-                FileUtil.write(file, transform.transform(FileUtil.read(file)));
+                if (file.getName().endsWith(".class")) {
+                    FileUtil.write(file, transform.transform(FileUtil.read(file)));
+                }
             }
         });
     }
