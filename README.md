@@ -1,8 +1,8 @@
 # Transform
 
-[![img](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/cn/enaium/transform/maven-metadata.xml.svg?label=gradle&style=flat-square&logo=gradle)]("https://plugins.gradle.org/plugin/cn.enaium.transform")
+[![img](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/cn/enaium/transform/maven-metadata.xml.svg?label=gradle&style=flat-square&logo=gradle)](https://plugins.gradle.org/plugin/cn.enaium.transform)
 [![release](https://img.shields.io/github/v/release/Enaium/transform?logo=github&style=flat-square)
-]("https://github.com/Enaium/transform/releases")
+](https://github.com/Enaium/transform/releases)
 ## Install 
 
 ```groovy
