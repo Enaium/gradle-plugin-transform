@@ -10,6 +10,10 @@ plugins {
     id "cn.enaium.transform" version "1.1"
 }
 
+repositories {
+  gradlePluginPortal()
+}
+
 dependencies {
     compileOnly('cn.enaium:transform:1.1')
 }
