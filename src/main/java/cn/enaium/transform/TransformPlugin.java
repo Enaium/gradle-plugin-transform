@@ -14,6 +14,5 @@ public class TransformPlugin implements Plugin<Project> {
     public void apply(Project project) {
         project.getExtensions().create("transformExtend", TransformExtension.class);
         TaskProvider<TransformTask> transformTask = project.getTasks().register("transformTask", TransformTask.class, t -> t.setGroup("transform"));
-        project.getTasks().getByName("compileJava").finalizedBy(transformTask);
     }
 }
